@@ -1,0 +1,19 @@
+{
+  "name": "react-native-better-template",
+  "version": "1.0.0",
+  "description": "react-native项目模板",
+  "main": "index.js",
+  "author": "wcly",
+  "license": "MIT",
+  "scripts": {
+    "cz": "cz"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
