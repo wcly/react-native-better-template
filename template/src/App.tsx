@@ -1,27 +1,16 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
- * @format
- */
-
-import Home from '@pages/Home';
+import 'react-native-gesture-handler';
 import React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native';
+import Root from '@router';
 
 const App = () => {
   return (
     <>
-      <SafeAreaView>
-        <Home />
+      <SafeAreaView style={{ flex: 1 }}>
+        <Root />
       </SafeAreaView>
     </>
   );
 };
-
-const styles = StyleSheet.create({});
 
 export default App;

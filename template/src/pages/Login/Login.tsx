@@ -3,14 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 
 type Props = {};
 
-const Home: FC<Props> = () => {
+const Login: FC<Props> = () => {
   return (
     <View>
-      <Text>Home</Text>
+      <Text>Login</Text>
     </View>
   );
 };
 
-export default memo(Home);
+export default memo(Login);
 
 const styles = StyleSheet.create({});
