@@ -1,7 +1,11 @@
 import React, { memo, FC } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { MineNavigationProp, MineRouteProp } from 'src/route';
 
-type Props = {};
+type Props = {
+  route: MineRouteProp,
+  navigation: MineNavigationProp
+};
 
 const Mine: FC<Props> = () => {
   return (

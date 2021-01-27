@@ -1,7 +1,11 @@
 import React, { memo, FC } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
+import { HomeNavigationProp, HomeRouteProp } from 'src/route';
 
-type Props = {};
+type Props = {
+  route: HomeRouteProp,
+  navigation: HomeNavigationProp,
+};
 
 const Home: FC<Props> = ({ navigation }) => {
   return (

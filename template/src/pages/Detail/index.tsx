@@ -1,7 +1,11 @@
 import React, { memo, FC } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { DetailNavigationProp, DetailRouteProp } from 'src/route';
 
-type Props = {};
+type Props = {
+  route: DetailRouteProp,
+  navigation: DetailNavigationProp,
+};
 
 const Detail: FC<Props> = () => {
   return (

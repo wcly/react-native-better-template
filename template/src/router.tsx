@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { FC, useCallback } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -6,10 +6,23 @@ import Home from '@pages/Home';
 import Mine from '@pages/Mine';
 import Detail from '@pages/Detail';
 import BottomTabBar from '@components/BottomTabBar';
-const RootStack = createStackNavigator();
-const MainBottomTab = createBottomTabNavigator();
+import {
+  MainBottomTabParamList,
+  MainNavigationProp,
+  MainRouteProp,
+  MineRouteProp,
+  RootStackParamList,
+} from './route';
 
-const Main = () => {
+type MainProps = {
+  route: MainRouteProp;
+  navigation: MainNavigationProp;
+};
+
+const RootStack = createStackNavigator<RootStackParamList>();
+const MainBottomTab = createBottomTabNavigator<MainBottomTabParamList>();
+
+const Main: FC<MainProps> = () => {
   const tabBar = useCallback((props) => <BottomTabBar {...props} />, []);
 
   return (
@@ -20,7 +33,7 @@ const Main = () => {
   );
 };
 
-export default function Root() {
+const Root: FC = () => {
   return (
     <NavigationContainer>
       <RootStack.Navigator screenOptions={{ headerTitleAlign: 'center' }}>
@@ -29,4 +42,6 @@ export default function Root() {
       </RootStack.Navigator>
     </NavigationContainer>
   );
-}
+};
+
+export default Root;
