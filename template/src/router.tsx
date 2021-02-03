@@ -5,12 +5,12 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '@pages/Home';
 import Mine from '@pages/Mine';
 import Detail from '@pages/Detail';
+import Login from '@pages/Login';
 import BottomTabBar from '@components/BottomTabBar';
 import {
   MainBottomTabParamList,
   MainNavigationProp,
   MainRouteProp,
-  MineRouteProp,
   RootStackParamList,
 } from './route';
 
@@ -39,6 +39,7 @@ const Root: FC = () => {
       <RootStack.Navigator screenOptions={{ headerTitleAlign: 'center' }}>
         <RootStack.Screen name="Main" component={Main} />
         <RootStack.Screen name="Detail" component={Detail} />
+        <RootStack.Screen name="Login" component={Login} />
       </RootStack.Navigator>
     </NavigationContainer>
   );

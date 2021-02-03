@@ -3,8 +3,8 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import { HomeNavigationProp, HomeRouteProp } from 'src/route';
 
 type Props = {
-  route: HomeRouteProp,
-  navigation: HomeNavigationProp,
+  route: HomeRouteProp;
+  navigation: HomeNavigationProp;
 };
 
 const Home: FC<Props> = ({ navigation }) => {
@@ -14,6 +14,10 @@ const Home: FC<Props> = ({ navigation }) => {
       <Button
         title="go to detail"
         onPress={() => navigation.navigate('Detail')}
+      />
+      <Button
+        title="go to login"
+        onPress={() => navigation.navigate('Login')}
       />
     </View>
   );

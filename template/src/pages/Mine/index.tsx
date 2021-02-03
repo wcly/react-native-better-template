@@ -3,8 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import { MineNavigationProp, MineRouteProp } from 'src/route';
 
 type Props = {
-  route: MineRouteProp,
-  navigation: MineNavigationProp
+  route: MineRouteProp;
+  navigation: MineNavigationProp;
 };
 
 const Mine: FC<Props> = () => {

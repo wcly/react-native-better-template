@@ -3,8 +3,8 @@ import { StyleSheet, Text, View } from 'react-native';
 import { DetailNavigationProp, DetailRouteProp } from 'src/route';
 
 type Props = {
-  route: DetailRouteProp,
-  navigation: DetailNavigationProp,
+  route: DetailRouteProp;
+  navigation: DetailNavigationProp;
 };
 
 const Detail: FC<Props> = () => {
