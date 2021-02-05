@@ -31,4 +31,5 @@ npx react-native init MyApp --template https://github.com/wcly/react-native-bett
 | [react-native-reanimated](https://github.com/software-mansion/react-native-reanimated) | ^1.13.2 | 动画库，提高复杂动画性能                          |
 | [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons) | ^8.0.0  | 字体图标库                                        |
 | [axios](https://github.com/axios/axios)                      | ^0.21.1 | 基于Promise的http请求库                           |
+| [dva-core](https://dvajs.com/)                      | ^2.0.4 | 基于redux的轻量数据处理框架                         |
 
