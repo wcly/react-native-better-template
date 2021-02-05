@@ -2543,6 +2543,14 @@ dva-core@^2.0.4:
     redux-saga "^0.16.0"
     warning "^3.0.0"
 
+dva-immer@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.npm.taobao.org/dva-immer/download/dva-immer-0.5.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdva-immer%2Fdownload%2Fdva-immer-0.5.2.tgz#128bd6d96b25f11e6f137807b614b9c58cf03f32"
+  integrity sha1-EovW2Wsl8R5vE3gHthS5xYzwPzI=
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    immer "^7.0.5"
+
 dva-loading@^3.0.22:
   version "3.0.22"
   resolved "https://registry.npm.taobao.org/dva-loading/download/dva-loading-3.0.22.tgz#c0dd2fb081492752b992d9ce2701b88825186e02"
@@ -3569,6 +3577,11 @@ image-size@^0.6.0:
   version "0.6.3"
   resolved "https://registry.npm.taobao.org/image-size/download/image-size-0.6.3.tgz?cache=0&sync_timestamp=1603729042810&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimage-size%2Fdownload%2Fimage-size-0.6.3.tgz#e7e5c65bb534bd7cdcedd6cb5166272a85f75fb2"
   integrity sha1-5+XGW7U0vXzc7dbLUWYnKoX3X7I=
+
+immer@^7.0.5:
+  version "7.0.15"
+  resolved "https://registry.npm.taobao.org/immer/download/immer-7.0.15.tgz?cache=0&sync_timestamp=1611143247110&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimmer%2Fdownload%2Fimmer-7.0.15.tgz#dc3bc6db87401659d2e737c67a21b227c484a4ad"
+  integrity sha1-3DvG24dAFlnS5zfGeiGyJ8SEpK0=
 
 import-fresh@^2.0.0:
   version "2.0.0"
