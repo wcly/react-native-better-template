@@ -1,7 +1,14 @@
 import React, { memo, FC } from 'react';
-import { Alert, Button, StyleSheet, View } from 'react-native';
+import {
+  ActivityIndicator,
+  Alert,
+  Button,
+  StyleSheet,
+  View,
+} from 'react-native';
 import { LoginNavigationProp, LoginRouteProp } from 'src/route';
-import { login } from '@services/login';
+import { useDispatch, useSelector } from 'react-redux';
+import { DefaultRootState } from '@models/index.d.ts';
 
 type Props = {
   route: LoginRouteProp;
@@ -9,19 +16,25 @@ type Props = {
 };
 
 const Login: FC<Props> = () => {
+  const dispatch = useDispatch();
+  const loading = useSelector(
+    ({ loading }: DefaultRootState) => loading.models.user,
+  );
+
   const handlePress = async () => {
-    const res = await login({
-      username: 'xxx',
-      password: 'xxx',
+    await dispatch({
+      type: 'user/login',
+      payload: {
+        username: 'xxx',
+        password: 'xxx',
+      },
     });
-    console.log(res)
-    if(res.code === 0){
-      Alert.alert('提示', '登录成功');
-    }
+    Alert.alert('提示', '登录成功');
   };
 
   return (
     <View style={styles.wrapper}>
+      {loading && <ActivityIndicator size="small" />}
       <Button title="login" onPress={handlePress} />
     </View>
   );
